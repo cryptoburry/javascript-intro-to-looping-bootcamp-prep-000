@@ -1,0 +1,48 @@
+function forLoop(array){
+  var i;
+  for(i=0;i<25;i++){
+    if(i===0){
+      array[i] = `I am ${i+1} strange loop`;}
+    else{
+      array[i] = `I am ${i} strange loops`;}
+    
+  }
+  return array;
+}
+
+function whileLoop(number){
+  while(number>0){
+    console.log(number);
+    number--;
+  }
+  return 'done';
+}
+
+function maybeTrue(){
+  return Math.random() >= 0.5;
+}
+
+function doWhileLoop(array){
+  do {
+    array.pop();
+  }
+  while(maybeTrue() && array.length>0);
+  return array;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
